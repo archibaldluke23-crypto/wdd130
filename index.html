@@ -3,55 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luke Portal Page</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Luke's Portal Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!--div seperates things and wraps things-->
-    <div id="wrapper">
-        <header>
-            <!--alt stands for alternitive if your image doesnt show up or for screen readers-->
-            <img src="images/Luke Logo.png" alt="logo">
-            <h1>Luke's Portal Page</h1>
-        </header>
+    <header>
+        <div id="top_box">
+            <img id="logo" src="portal_images/Luke tech logo.png" alt="Luke tech logo">
+            <p id="quote"><i>"For precept must be upon precept, ... line upon line, ... here a little, and there a little"</i> -Isaiah 29:10</p>
+        </div>
         <nav>
-            <!--a means url. href makes the link turn blue-->
             <a href="index.html">Home</a>
             <a href="wwr/index.html">WWR</a>
-            <a href="">ICE</a>
-            <a href="">Project</a>
-            <!--shift alt down copies and pasts a line onto the next line-->
+            <a href="ice.html">Ice</a>
+            <a href="aboutme.html">About Me</a>
         </nav>
-        <main>
-            <section class="col_left">
-                <img src="images/raft bout to die.jpg" alt="raft bout to die">
-                <p>WWR</p>
-            </section>
-            <section class="col_right">ICE</section>
-            <section class="col_left">Project</section>
-            <section class="col_right">About Me
-                <a href="aboutme.html"><img src="images/Luke Logo.png" alt="Luke logo">About Me</a>
-            </section>
-            <section id="ads"><strong> Form</strong>
-                <form>
-                    <label for=input1>type below</label><br>
-                    <input type="text" id="input1" name="input1">
-                </form>
-            </section>
-        </main>
-        <!-- type ">format selection" in the search bar at the top in vs code to formate the indentations-->
-        <footer>
-            <ul>
-                <a href="">Home</a>
-                <a href="">WWR</a>
-                <a href="">ICE</a>
-                <a href="">Project</a>
+        <div id="title">
+            <h1>My Portal Page</h1>
+            <img class="headerbackground" src="portal_images/tech background.png" alt="tech background">
+            <img class="headerbackground" src="portal_images/raft bout to die.jpg" alt="rafting">
+            <img class="headerbackground" src="portal_images/icicles.jpg" alt="icicles">
+            <img class="headerbackground" src="portal_images/waving.webp" alt="waving">
+        </div>
+    </header>
+    <section id="form">
+        <strong>Form</strong>
+        <form>
+            <label class="drop_down_menu" for="page">Favorite Page</label>
+            <select name="page" class="drop_down_menu">
+                <option value="home">Home</option>
+                <option value="wwr">WWR</option>
+                <option value="ice">Ice</option>
+                <option value="about_me">About Me</option>
+            </select>
+            <div>
+                <label id="why" for="reason">Why?</label>
+                <input type="text" name="reason" id="reason">
+                <input type="submit" name="submit" id="submit">
+            </div>
+        </form>
+    </section>
+    <main>
+        
+        <p class="intro">
+            Welcome to my portal page! I created this page as an assignment for 
+            for my Web Fundementals class at BYU Idaho. I disigned and put together this website 
+            from start to finish using the knowlage gained from the first half of the semester in this class. 
+            This isn't the first website I've designed though. My first website is a previuse portal
+            page that I made while following along with my professer as he demenstrated the skills
+            we would learn in this class by creating his own portal page as an example. The site is 
+            not complete and was only used to get a basic understand of HTML and CSS but it still has
+            some functionality. Here's the link!
+        </p>
+        <a class="intro" id="introlink" href="portal page/old_portal.html" target="_blank">First Page!</a>
+        <div id="box">
+            <h2>What this page does</h6>
+            <ul id="list">
+                <li>Links all my webpages together</li>
+                <li>Provides a hub for my future work in this class</li>
+                <li>Gives me practice creating websites</li>
+                <li>Helps me learn how to do new things in CSS</li>
+                <li>Sums up what each page does</li>
             </ul>
-            Copyright 25 &copy;
-        </footer>
-    </div>
-<!--This is a comment-->
-</body>
-<link rel="stylesheet" href="style.css">
+            <img id="links" src="portal_images/links.jpg" alt="chain links">
+        </div>
+        <p id="filler">
+            This page has links to four pages I've made, three of which are in the navigation bar.
+            Each one of them were designed by me in one way or another. I've had a fun time figuring 
+            out how to solve problems with HTML and CSS and each project I learn something new that 
+            I can apply to my next page. I made a table down below displaying information about each one. 
+            There is also a form on the left side of the screen that you can fill out about what your 
+            favorite page is and why.
+        </p>
+        <table class="blueTable">
+            <thead>
+                <tr>
+                    <th>Page</th>
+                    <th>Function</th>
+                    <th>Design by me?</th>
+                    <th>Favorite Part</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="page"><strong>WWR</strong></td>
+                    <td>White water rafting home page</td>
+                    <td>Only partly</td>
+                    <td>Popping out pictures</td>
+                </tr>
+                <tr>
+                    <td class="page"><strong>Ice</strong></td>
+                    <td>Hub for all my ice challenges</td>
+                    <td>Yes</td>
+                    <td>The clean layout</td>
+                </tr>
+                <tr>
+                    <td class="page"><strong>About Me</strong></td>
+                    <td>Displays a tinny bit of info about me</td>
+                    <td>Mostly</td>
+                    <td>Comicly large logo</td>
+                </tr>
+                <tr>
+                    <td class="page"><strong>Old Portal Page</strong></td>
+                    <td>Practice page to work on</td>
+                    <td>Mostly</td>
+                    <td>The forest background</td>
+                </tr>
+            </tbody>
+            </tr>
+        </table>
+    </main>
+    <footer>
+        <ul id="footerlist">
+            <div id="copyright">
+                Copyright 25 &copy;
+            </div>
+            <div id="footerlinks">
+                <a href="index.html">Home</a>
+                <a href="wwr/index.html">WWR</a>
+                <a href="ice.html">Ice</a>
+                <a href="aboutme.html">About Me</a>
+            </div>
+        </ul>
 
+    </footer>
+</body>
 </html>
