@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russell M. Nelson</title>
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
+
+        /* Insert styles here, this is called an internal stylesheet  */
+        body {
+            background: #FFECD7;
+            display: grid;
+            grid-template-columns: 1fr .6fr 1fr;
+        }
+        .card {
+            grid-column: 2/3;
+            height: 100%;
+            background-color: #008DB1;
+            border: solid #004E63 5px;
+            border-radius: 20px;
+            display: grid;
+            padding: 10px 20px 10px 20px; 
+            font-family:  Helvetica, Arial, sans-serif;
+        }
+        div {
+            display: flex;
+            text-align: center;
+            justify-items: center;
+            align-items: center;
+        }
+        h1, ul{
+            color: #FFFFFF;
+        }
+        a {
+            color: #91E4FB;
+            text-decoration: none;
+            
+        }
+        img {
+            align-self: center;
+            justify-self: center;
+            border: solid white 5px;
+            width: 80%;
+        }
+        ul {
+            font-size: 1.3em;
+            margin:auto;
+            text-align: left;
+        }
+        #quote {
+            color: #FFD783;
+            font-family: "Nanum Brush Script", Arial, Helvetica, sans-serif;
+            font-size: 1.2em;
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="card">
+        <header>
+            <h1>Russell M. Nelson</h1>
+            <a href="https://www.churchofjesuschrist.org/?lang=eng">17th Presedent of the Church of Jesus Christ of Latter-day Saints</a>
+        </header>
+        <img src="images/russell_nelson.png" alt="Russell M. Nelson image" >
+        <ul>
+            <li>Born: Sep 9, 1924</li>
+            <li>Apostle: April 7, 1984</li>
+            <li>Prophet: Jan 14, 2018</li>
+        </ul>
+        <p id="quote">
+            "I urge you to devote time each week - for the rest of your life - to increase your understanding of the Atonement of Jesus Christ"
+        </p>
+
+    </div> 
+</body>
+</html>

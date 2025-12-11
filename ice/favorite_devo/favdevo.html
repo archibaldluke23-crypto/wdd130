@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <table class="blueTable">
+          <thead>
+            <tr>
+              <th>Speaker</th>
+              <th>Title</th>
+              <th>Location</th>
+              <th>Year</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kristin M. Yee</td>
+              <td>Believe in God</td>
+              <td>BYUI</td>
+              <td>2025</td>
+            </tr>
+            <tr>
+              <td>Lance B. Wickman</td>
+              <td>Don't Shrink!: Facing Life's Uncertainties</td>
+              <td>BYUI</td>
+              <td>2025</td>
+            </tr>
+            <tr>
+              <td>Stephanie L. Colvin</td>
+              <td>First Things First</td>
+              <td>BYUI</td>
+              <td>2025</td>
+            </tr>
+            <form action="/submit_form" method="">
+              <tr>
+                <td><label for="speaker">Speaker Name:</label>
+                  <input type="text" id="speaker" name="speaker"></td>
+                <td><label for="title">Title:</label>
+                  <input type="text" id="title" name="title"></td>
+                <td><label for="location">Location:</label>
+                  <input type="text" id="location" name="location"></td>
+                <td><label for="year">Year:</label>
+                  <input type="text" id="year" name="year"></td>
+              </tr>
+            </form>
+          </tbody>
+        </table>
+        
+          
+          
+          
+          
+          <input id="submit" type="submit" value="Submit">
+        
+      </div>
+    </main>
+  </div>
+</body>
+</html>

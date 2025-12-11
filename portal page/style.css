@@ -1,0 +1,359 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+/*
+fonts:
+Ubuntu
+Quicksand
+Orbitron
+
+colors:
+#32127A -Persian indigo (dark purple)
+#0000FF -blue
+#45B1E8 -Picton blue (light blue)
+#010B13 -rich black
+#6F00FF -Electric indigo (violet)
+*/
+body {
+    text-align: center;
+    font-family: "Quicksand", "Ubuntu", "Orbitron";
+}
+header {
+    height: 600px;
+    background-color: #010B13;
+    color: white;
+  
+}
+#top_box {
+    display: grid;
+    grid-template-columns: 100px 1fr 1.4fr 1fr;
+    grid-template-rows: 30px 100px 100px;
+    height: 210px;
+
+}
+#logo {
+    width: 200px;
+    border-radius: 100%;
+    grid-column: 1/2;
+    grid-row: 1/2;
+    margin-right: 0;
+}
+#quote {
+    background-color: #6F00FF;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    font-family: "Ubuntu", "Orbitron", "Quicksand";
+
+    grid-column: 2 / 4;
+    grid-row: 2/3;
+    margin-left: 50px;
+    font-size: 1.4em;
+    align-self: center;
+
+}
+nav {
+    background-color: #32127A;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row: 2/3;
+    grid-column: 1 /5;
+    font-family: "Ubuntu", "Orbitron", "Quicksand";
+
+}
+nav a {
+    color:white;
+    font-size: 1.5em;
+    text-decoration: none;
+    align-items: center;
+    align-self: center;
+    justify-self: center;
+}
+nav a:hover {
+  color:#45B1E8;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+#title {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-family: "Orbitron", "Ubuntu", "Quicksand";
+    justify-self: center;
+    justify-content: center;
+    justify-items: center;
+    grid-row: 3/4;
+    grid-column: 1/5;
+}
+header img {
+    width: 100%;
+    z-index: 0;
+    display: block;
+
+}
+.headerbackground {
+    grid-column: 1 span;
+    grid-row-start: 1;
+    z-index: 0;
+}
+h1 {
+    font-size: 10em;
+    z-index: 1;
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    position: absolute;
+    text-align: center;
+    align-self: center;
+    text-shadow: 20px 20px 40px black; /* makes text readable */
+}
+#form {
+    width: 150px;
+    height: 250px;
+    border: 3px solid black;
+    position: fixed;
+    left: -145px;
+    background-color: #32127A;
+    color: white;
+    transition: right .85s ease-out;
+    top: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    transition: left .85s ease-out;
+}
+#form strong {
+  font-size: 35px;
+  margin-left: 30px;
+  font-family: "Orbitron", "Ubuntu", "Quicksand";
+}
+label, select, input {
+  margin-top: 10px;
+  font-family: "Ubuntu", "Orbitron", "Quicksand";
+  font-size: 1.2em;
+
+}
+select {
+  margin-bottom: 20px;
+}
+#why {
+  margin-top: 70px;
+}
+#reason {
+  width: 140px;
+}
+#form:hover {
+    left: 0px;
+    transition: left .85s ease-in;
+}
+main{
+  margin-top: 100px;
+  min-height: 500px;
+}
+.intro, #filler{
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 150px;
+    margin-left: 300px;
+    margin-right: 300px;
+    text-decoration: none;
+    
+}
+#introlink {
+    background-color: #45B1E8;
+    color: white;
+    padding: 5px;
+    font-family: "Ubuntu", "Orbitron", "Quicksand";
+    border-radius: 5px;
+}
+#introlink:hover {
+  color:black;
+  background-color:#6F00FF;
+}
+#box {
+    background-color: #32127A;
+    margin-top: 60px;
+    justify-self: center;
+    width: 80%;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    color: white;
+    font-size: 1.7em;
+}
+h2, #list {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+h2 {
+    font-family: "Orbitron", "Ubuntu", "Quicksand";
+}
+#list {
+    font-family: "Ubuntu", "Orbitron", "Quicksand";
+    margin: 0 auto;
+    align-self: center;
+}
+#list li {
+  margin-top: 30px;
+  text-align: left;
+}
+#links {
+    width: 600px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: center;
+}
+#filler {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+table.blueTable {
+  font-family: "Ubuntu", "Quicksand", "Orbitron";
+  border: 1px solid #000000;
+  background-color: #EEEEEE;
+  width: 70%;
+  justify-self: center;
+  text-align: center;
+  border-collapse: collapse;
+  height: 200px;
+  width: 600px;
+}
+table.blueTable td, table.blueTable th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 2px;
+}
+table.blueTable tbody td {
+  font-size: 13px;
+}
+table.blueTable tr:nth-child(even) {
+  background: #6f00ff11;
+}
+table.blueTable thead {
+  background: #ffffff;
+  background: -moz-linear-gradient(top, #32127A 0%, #0000FF 66%, #0000FF 100%);
+  background: -webkit-linear-gradient(top, #32127A 0%, #0000FF 66%, #0000FF 100%);
+  background: linear-gradient(to bottom, #32127A 0%, #0000FF 66%, #0000FF 100%);
+  border-bottom: 2px solid #32127A;
+}
+table.blueTable thead th {
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 3px solid #32127A;
+}
+table.blueTable thead th:first-child {
+  border-left: none;
+}
+
+table.blueTable tfoot td {
+  font-size: 14px;
+}
+table.blueTable tfoot .links {
+  text-align: right;
+}
+table.blueTable tfoot .links a{
+  display: inline-block;
+  background: #32127A;
+  color: #FFFFFF;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+tbody tr .page {
+  background-color: #0000ffaa;
+  color: white;
+  width: 80px;
+  border-right: solid #32127A 3px;
+}
+footer {
+  background-color: #010B13;
+  font-size: 1.5em;
+  color: white;
+  height: 4em;
+  display: flex;
+  font-family: "Ubuntu", "Orbitron", "Quicksand";
+  margin-top: 50px;
+}
+#footerlist {
+  display: grid;
+  grid-template-columns: 2.4fr 4fr;
+  align-items: center;
+}
+#copyright {
+  float: left;
+}
+ul a {
+  margin-left: 100px;
+  color: #45B1E8;
+  text-align: center;
+  justify-self: center;
+}
+ul a:hover {
+  color: #0000FF;
+}
+
+
+/*ice page*/
+#ice_challenges {
+  display: grid;
+  margin-top: 200px;
+  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr;
+  text-align: center;
+  position: relative;
+}
+#ice_challenges img{
+  width: 300px;
+  height: 300px;
+  justify-self: center;
+  display: block;
+  margin-bottom: 20px;
+  border: solid #0000FF 2px;
+}
+
+#ice_challenges div a {
+  text-align: center;
+  font-size: 1.5em;
+  font-family: "Ubuntu", "Orbitron", "Quicksand";
+  text-decoration: none;
+  background-color: #45B1E8;
+  color: white;
+  padding: 5px;
+  border-radius: 4px;
+}
+#ice_challenges div a:hover {
+  background-color: #6F00FF;
+  color: #000000;
+}
+#ice_challenges div p {
+  margin-left: 75px;
+  margin-right: 75px;
+  font-size: 1.2em;
+}
+#prophet {
+  grid-column: 1/2;
+  text-align: center;
+}
+#apostle {
+  grid-column: 2/3;
+}
+#devo {
+  grid-column: 3/4;
+}
+#flags {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+#halloween {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+#positioning {
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+#gallery {
+  grid-column: 2/3;
+  grid-row: 3/4;
+}

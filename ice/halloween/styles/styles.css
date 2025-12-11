@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Creepster&family=Eater&family=Road+Rage&display=swap');
+/*Creepster
+Eater
+Road Rage
+*/
+.orange {
+    background-color: #E4731A;
+}
+.lightblue {
+    background-color: #7BB5B3;
+}
+.black {
+    background-color: #03030B;
+}
+.darkblue {
+    background-color: #092337;
+}
+.violet {
+    background-color: #61516E;
+}
+body {
+    background-color: #03030B;
+    color: white;
+    text-align: center;
+    font-family: "Creepster", "Eater", "Road Rage";
+}
+#wrapper {
+        background-color: #092337;
+        justify-self: center;
+        width: 1100px;
+}
+nav {
+    background-color: #61516E;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: "Eater";
+    font-size: 2em;
+}
+h1 {
+    font-size: 4em;
+}
+img:hover {
+    transform: scale(1.1);
+}
+section {
+        background-color: #E4731A;
+        width: 500px;
+        justify-self: center;
+}
+h2 {
+    font-family: "Eater";
+    font-size: 2em;
+}
+p {
+    font-family: "Road Rage";
+    font-size: 2em;
+}

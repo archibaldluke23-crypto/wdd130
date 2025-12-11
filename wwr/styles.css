@@ -1,0 +1,16 @@
+/*this is a comment*/
+body {
+    background-color: aqua;
+    padding: auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: auto;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-size: medium;
+    border: 0cm;
+    background-image: -moz-linear-gradient(grey, white);
+    line-height: normal;
+    width: 100%;
+    
+}
