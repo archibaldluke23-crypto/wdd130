@@ -159,16 +159,22 @@ main{
     text-decoration: none;
     
 }
-#introlink {
+#introlink, #jr_page1, #jr_page2 {
     background-color: #45B1E8;
     color: white;
     padding: 5px;
     font-family: "Ubuntu", "Orbitron", "Quicksand";
     border-radius: 5px;
 }
-#introlink:hover {
+#introlink:hover, #jr_page1:hover, #jr_page2:hover {
   color:black;
   background-color:#6F00FF;
+}
+#jr_page1, #jr_page2 {
+  display: flex;
+  max-width: 230px;
+  justify-self: center;
+  margin-top: 20px;
 }
 #box {
     background-color: #32127A;
@@ -356,4 +362,26 @@ ul a:hover {
 #gallery {
   grid-column: 2/3;
   grid-row: 3/4;
+}
+#report_page h2 {
+  font-size: 2em;
+
+}
+#report_page p {
+  font-size: 1.5em;
+  max-width: 80%;
+  justify-self: center;
+
+}
+.line {
+  width: 80%;
+  height: 2px;
+  background-color: #0000FF;
+  margin: 50px auto;
+}
+#top {
+  margin-top: 150px;
+}
+#bottom {
+  margin-bottom: 150px;
 }
